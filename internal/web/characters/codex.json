@@ -1,0 +1,70 @@
+{
+  "id": "codex",
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 9,
+  "pixel": true,
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "frameDurationsMs": [
+        1300,
+        130,
+        350,
+        1200,
+        150,
+        130
+      ],
+      "loop": true,
+      "label": "放空一下",
+      "caption": "光标闪一下，我就醒啦。"
+    },
+    "working": {
+      "row": 7,
+      "frames": 6,
+      "frameDurationsMs": [
+        350,
+        250,
+        120,
+        250,
+        350,
+        250
+      ],
+      "loop": true,
+      "label": "认真开工",
+      "caption": "键盘就位，开始干活。"
+    },
+    "waiting": {
+      "row": 3,
+      "frames": 4,
+      "frameDurationsMs": [
+        700,
+        280,
+        280,
+        700
+      ],
+      "loop": true,
+      "label": "等你拿主意",
+      "caption": "挥挥手，等你接个话。"
+    },
+    "complete": {
+      "row": 8,
+      "frames": 6,
+      "frameDurationsMs": [
+        450,
+        260,
+        300,
+        450,
+        300,
+        350
+      ],
+      "loop": true,
+      "label": "做好啦",
+      "caption": "完成，开心跳一下！"
+    }
+  },
+  "version": 1,
+  "atlas": "/d/characters/codex-v4.webp"
+}

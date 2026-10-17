@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "id": "muse",
+  "atlas": "/d/characters/muse-v1.png",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 6,
+  "rows": 4,
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        1400,
+        240,
+        100,
+        80,
+        100,
+        1100
+      ],
+      "label": "放空一下",
+      "caption": "我在这儿，慢慢来。"
+    },
+    "working": {
+      "row": 1,
+      "frames": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        460,
+        320,
+        130,
+        90,
+        140,
+        460
+      ],
+      "label": "认真开工",
+      "caption": "让我把这件事理一理。"
+    },
+    "waiting": {
+      "row": 2,
+      "frames": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        500,
+        320,
+        220,
+        100,
+        220,
+        600
+      ],
+      "label": "等你拿主意",
+      "caption": "有个小问题，想听听你的想法。"
+    },
+    "complete": {
+      "row": 3,
+      "frames": 6,
+      "loop": true,
+      "frameDurationsMs": [
+        420,
+        250,
+        180,
+        100,
+        180,
+        600
+      ],
+      "label": "做好啦",
+      "caption": "做好啦，快来看看！"
+    }
+  }
+}

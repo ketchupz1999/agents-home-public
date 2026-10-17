@@ -1,0 +1,14 @@
+/dist/
+/var/
+/coverage.out
+.env
+.env.*
+*.key
+keys.json
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.bak
+__pycache__/
+.DS_Store

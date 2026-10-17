@@ -1,0 +1,72 @@
+{
+  "id": "chatgpt",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 6,
+  "rows": 4,
+  "pixel": false,
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "frameDurationsMs": [
+        1400,
+        240,
+        100,
+        80,
+        100,
+        1100
+      ],
+      "loop": true,
+      "label": "放空一下",
+      "caption": "脑袋空空，也装得下灵感。"
+    },
+    "working": {
+      "row": 1,
+      "frames": 6,
+      "frameDurationsMs": [
+        460,
+        320,
+        130,
+        90,
+        140,
+        460
+      ],
+      "loop": true,
+      "label": "认真开工",
+      "caption": "把零散想法理成小纸条。"
+    },
+    "waiting": {
+      "row": 2,
+      "frames": 6,
+      "frameDurationsMs": [
+        500,
+        320,
+        220,
+        100,
+        220,
+        600
+      ],
+      "loop": true,
+      "label": "等你拿主意",
+      "caption": "这里有个小问号。"
+    },
+    "complete": {
+      "row": 3,
+      "frames": 6,
+      "frameDurationsMs": [
+        420,
+        250,
+        180,
+        100,
+        180,
+        600
+      ],
+      "loop": true,
+      "label": "做好啦",
+      "caption": "把整理好的答案递给你。"
+    }
+  },
+  "version": 1,
+  "atlas": "/d/characters/chatgpt-v1.png"
+}

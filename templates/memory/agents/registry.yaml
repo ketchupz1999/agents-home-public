@@ -1,0 +1,13 @@
+roles:
+  - id: assistant
+    workspace_description: 我的 Agent 工作空间
+    character: placeholder
+    invocation: on_demand
+agents:
+  - id: owner
+    environment: personal
+    agent: 本人
+  - id: my-agent
+    environment: local
+    agent: 本地 Agent
+    role_id: assistant

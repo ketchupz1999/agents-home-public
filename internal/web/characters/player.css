@@ -1,0 +1,33 @@
+.agent-directory { align-items: start; }
+.agent-character { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 15px; }
+.character-title { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px; font-size: 12px; }
+.character-title > span:first-child { font-family: "Songti SC", "STSong", serif; font-size: 16px; }
+.character-title .muted { font-size: 10px; }
+.character-scene { display: grid; grid-template-columns: 148px minmax(0, 1fr); align-items: center; gap: 12px; margin-top: 8px; }
+.character-portrait { display: grid; place-items: center; width: 148px; height: 164px; border-radius: 48%; background: radial-gradient(ellipse, #f0eadb 0%, transparent 72%); }
+.character-portrait canvas { display: block; width: 148px; height: 148px; }
+.agent-character[data-character="claude"] .character-portrait { background: radial-gradient(ellipse, #f7e6dc 0%, transparent 72%); }
+.agent-character[data-character="codex"] .character-portrait { background: radial-gradient(ellipse, #e8ecfa 0%, transparent 72%); }
+.agent-character[data-character="chatgpt"] .character-portrait { background: radial-gradient(ellipse, #e9f0df 0%, transparent 72%); }
+.agent-character[data-character="claude"] canvas, .agent-character[data-character="codex"] canvas { image-rendering: pixelated; }
+.character-fallback .avatar { width: 96px; height: 96px; font-size: 30px; }
+.character-caption { font-size: 12px; line-height: 1.7; min-height: 40px; margin: 0 0 10px; color: var(--muted); }
+.character-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.character-actions button { min-width: 0; padding: 6px 4px; min-height: 44px; font-size: 11px; font-weight: 500; border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 10px; }
+.character-actions button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--soft); }
+.character-pause { min-height: 44px; padding: 6px 0; font-size: 11px; font-weight: 400; border: 0; background: transparent; color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  .character-portrait { background: radial-gradient(ellipse, #3a3d2d 0%, transparent 72%); }
+  .agent-character[data-character="claude"] .character-portrait { background: radial-gradient(ellipse, #49372e 0%, transparent 72%); }
+  .agent-character[data-character="codex"] .character-portrait { background: radial-gradient(ellipse, #30394e 0%, transparent 72%); }
+  .agent-character[data-character="chatgpt"] .character-portrait { background: radial-gradient(ellipse, #30432d 0%, transparent 72%); }
+}
+@media (max-width: 820px) and (min-width: 641px) {
+  .character-scene { grid-template-columns: 1fr; justify-items: center; }
+  .character-menu { width: 100%; }
+}
+@media (max-width: 380px) {
+  .character-scene { grid-template-columns: 112px minmax(0, 1fr); gap: 8px; }
+  .character-portrait { width: 112px; height: 140px; }
+  .character-portrait canvas { width: 112px; height: 112px; }
+}

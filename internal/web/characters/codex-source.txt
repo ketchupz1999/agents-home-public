@@ -1,0 +1,4 @@
+Reused existing avatar sprite atlas without image modification.
+Source: https://persistent.oaistatic.com/codex/pets/v1/codex-spritesheet-v4.webp
+Grid: 8 columns x 9 rows; 192 x 208 pixels per cell.
+Preview mappings: idle row 0 (6 frames), working row 7 (6), waiting/wave row 3 (4), complete row 8 (6).

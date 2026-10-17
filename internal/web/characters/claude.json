@@ -1,0 +1,72 @@
+{
+  "id": "claude",
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "columns": 6,
+  "rows": 4,
+  "pixel": true,
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "frameDurationsMs": [
+        1400,
+        240,
+        100,
+        80,
+        100,
+        1100
+      ],
+      "loop": true,
+      "label": "放空一下",
+      "caption": "发会儿呆，也挺好。"
+    },
+    "working": {
+      "row": 1,
+      "frames": 6,
+      "frameDurationsMs": [
+        460,
+        320,
+        130,
+        90,
+        140,
+        460
+      ],
+      "loop": true,
+      "label": "认真开工",
+      "caption": "敲敲键盘，事情在推进。"
+    },
+    "waiting": {
+      "row": 2,
+      "frames": 6,
+      "frameDurationsMs": [
+        500,
+        320,
+        220,
+        100,
+        220,
+        600
+      ],
+      "loop": true,
+      "label": "等你拿主意",
+      "caption": "举手，这里想和你对一下。"
+    },
+    "complete": {
+      "row": 3,
+      "frames": 6,
+      "frameDurationsMs": [
+        420,
+        250,
+        180,
+        100,
+        180,
+        600
+      ],
+      "loop": true,
+      "label": "做好啦",
+      "caption": "搞定！给你递个小对勾。"
+    }
+  },
+  "version": 1,
+  "atlas": "/d/characters/claude-v1.png"
+}
